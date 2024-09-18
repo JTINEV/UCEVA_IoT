@@ -1,0 +1,43 @@
+Nombre: Juana Valentina Plaza Azcarate – 230212038
+
+Cuestionario
+
+1. ¿Qué ventajas ofrece HTTP en un entorno IoT cuando se trata de interoperabilidad con servicios web? 
+
+- La gran ventaja que ofrece HTTP en un entorno IoT con respecto a servicios web es que permite la comunicación con una gran cantidad de servicios web, apps y plataformas de la nube. Esto permite que los dispositivos puedan interactuar de manera fluida y compatible en el envío de datos a plataformas de análisis.
+
+2. Explica una situación en la que el uso de HTTP podría no ser ideal en un dispositivo IoT. ¿Qué alternativas considerarías y por qué? 
+ 
+- No podría ser ideal en sensores de bajo consumo porque HTTP es un recurso basado en texto y, por ende, introduce una sobrecarga adicional en la comunicación, lo que se traduce como alto consumo de ancho de banda y energía.  
+
+- En este caso, podría ser mejor considerar protocolos como MQTT que es más ligero y está diseñado para la eficiencia energética o también tenemos CoAP  que está optimizado para dispositivos con capacidades limitadas y puede transmitir datos de manera más eficiente en redes restringidas. 
+ 
+
+3. Describe cómo funciona HTTP en términos de su estructura de solicitud y respuesta. ¿Cómo se gestionan los estados en HTTP? 
+
+- HTTP funciona mediante un proceso de solicitud y respuesta. Cuando un navegador web quiere obtener información de un servidor, envía una solicitud HTTP. Esta solicitud podría utilizar métodos como GET o POST y la dirección web (URL). 
+
+- El servidor recibe esta solicitud, la procesa, y devuelve una respuesta. Aquí se verifica si la solicitud fue exitosa o si hubo un problema. 
+
+- El HTTP gestiona el estado utilizando cookies o almacenando datos en el servidor o en el cliente. 
+
+
+4.En el contexto de IoT, ¿por qué es importante considerar el consumo de recursos al elegir HTTP como protocolo de comunicación? 
+
+- Como se mencionó anteriormente, el protocolo HTTP tiene ciertas limitaciones de ancho de banda, lo que puede representar un problema con dispositivos de baterías pequeñas o conexiones limitadas. Por ejemplo, un sensor de temperatura que necesita transmitir datos constantemente puede agotar su batería rápidamente si usa HTTP. Por eso, es crucial considerar el impacto en los recursos al elegir HTTP y evaluar otros protocolos más eficientes como MQTT o CoAP. 
+
+ 
+5. ¿Cómo puede un dispositivo IoT utilizar HTTP para interactuar con una API RESTful? Proporciona un ejemplo concreto. 
+ 
+- Se podría plantear el siguiente ejemplo: Un sensor de humedad en una planta de una casa y se quiere enviar su lectura a un servidor para que se pueda monitorear la humedad desde el teléfono. El sensor puede usar HTTP para enviar esta información. 
+
+
+6.Comparando HTTP con otros protocolos como MQTT o CoAP, ¿en qué casos específicos considerarías seguir utilizando HTTP en un dispositivo IoT? 
+ 
+- Cuando se necesita interoperabilidad con servicios web: Si un dispositivo IoT tiene que integrarse con aplicaciones web o servicios en la nube que utilizan HTTP, este protocolo es la opción natural.
+ 
+- Cuando se busca simplicidad en la implementación: Si el dispositivo tiene suficiente capacidad para manejar HTTP y el proyecto busca una solución sencilla, HTTP puede ser la opción más directa. 
+
+- Para actualizaciones de firmware: HTTP es bueno para descargar actualizaciones de firmware desde un servidor central, ya que puede manejar archivos grandes y garantizar una transferencia segura. 
+
+ 
